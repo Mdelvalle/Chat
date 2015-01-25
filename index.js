@@ -5,7 +5,7 @@ var app = express();
 var server = http.Server(app);
 
 app.get('/', function(req, res) {
-  res.send('<h1>Hello World</h1>');
+  res.sendFile(__dirname + '/index.html');
 });
 
 server.listen(1337, function() {
